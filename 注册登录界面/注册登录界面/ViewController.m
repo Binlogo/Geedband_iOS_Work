@@ -37,6 +37,7 @@
     self.accountTextField = [[UITextField alloc] initWithFrame:CGRectMake(140, 225, 155, 30)];
     UITextField *passwordTextField = [[UITextField alloc] initWithFrame:CGRectMake(140, 265, 155, 30)];
     self.passwordTextField = passwordTextField;
+    self.passwordTextField.secureTextEntry = YES;
     [self.accountTextField setBorderStyle:UITextBorderStyleRoundedRect];
     [passwordTextField setBorderStyle:UITextBorderStyleRoundedRect];
     [self.view addSubview:self.accountTextField];
